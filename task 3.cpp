@@ -1,14 +1,24 @@
 #include<iostream>
-#include<iomanip>
 using namespace std;
 int main(){
-	float score1,score2,score3,average;
-	score1=88.2;
-	score2=90.75;
-	score3=85.25;
-	cout<<fixed<<setprecision(2);
-	average=(score1+score2+score3)/3;
-	cout<<"the average of 88.5,90.75 and 88.5 is ="<<average;
-	return 0;
+	int balance,loyal;
+	cout<<"Enter account balance :";
+	cin>>balance;
+	cout<<"are you loyal customer(1 = yes, 0 = No):";
+	cin>>loyal;
+	string accounttype = (balance < 100)?"low balance account" :
+		
+		(balance <= 500)? "standard account" :
+			"premium account";
+			
+	string offer = (balance >200 && loyal == 1)? "eligible for special offer"
+	
+	                :"not eligible for special offer";
+					              
+	cout<<"account type:"<<accounttype<<endl;
+	
+	cout<< "special offer status:"<<offer<<endl;
+	
+	return 0;						
 	
 }

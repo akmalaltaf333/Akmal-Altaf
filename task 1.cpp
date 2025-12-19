@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int x1,x2,y1,y2;
-	x1=3; 
-	x2=6;
-	y1=4;
-	y2=8;
-	int squared_distance=(x2-x1)*(x2-x1)+(y2-y1)*(y2-y1);
-	cout<<"the squared distance between the point (3,4)and(6,8)is:"<<squared_distance<<endl;
+	int num;
+	cout<<"enter your integer :";
+	cin>>num;
+	string result =(num % 2 == 0)?"even" : "odd";
+	cout<< "The number is "<< num << result <<" : "<<endl;
 	return 0;
 }
