@@ -1,9 +1,12 @@
 #include<iostream>
 using namespace std;
 int main(){
-	string name;
-	name="Akmal Altaf";
-	cout<<"Name:"<<name<<endl;
+	//cout<<"welcome to the C++ labe!"<<endl;
+	//cout<<"you will learn output today"<<endl;
+	cout<<"*"<<endl;
+	cout<<"* *"<<endl;
+	cout<<"* * *"<<endl;
+	cout<<"* * * *"<<endl;
 	return 0;
 	
 }
